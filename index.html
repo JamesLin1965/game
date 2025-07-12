@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貪吃蛇遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>貪吃蛇遊戲</h1>
+            <div class="score-container">
+                <span>分數: </span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        <canvas id="game" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="start-btn">開始遊戲</button>
+            <button id="restart-btn">重新開始</button>
+        </div>
+        <div class="instructions">
+            <h2>遊戲說明</h2>
+            <p>使用鍵盤方向鍵 ↑ ↓ ← → 控制蛇的移動</p>
+            <p>吃到食物可以增加分數和蛇的長度</p>
+            <p>撞到牆壁或自己的身體會結束遊戲</p>
+        </div>
+        <!-- 音效元素 -->
+        <audio id="eat-sound" src="eat-sound.mp3" preload="auto"></audio>
+        <audio id="game-over-sound" src="game-over-sound.mp3" preload="auto"></audio>
+        <audio id="button-click-sound" src="button-click-sound.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
